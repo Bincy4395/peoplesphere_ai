@@ -581,8 +581,8 @@
 
 .chatbot-window {
   position: fixed;
-  right: 30px;
-  bottom: 30px;
+  right: 25px;
+  bottom: 25px;
 
   width: 380px;
   height: min(520px, calc(100vh - 140px));

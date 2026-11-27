@@ -8,6 +8,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from routers.chat import router as chat_router
 from routers.documents import router as documents_router
 from fastapi.openapi.utils import get_openapi
+from routers.langchain_chat import router as langchain_chat_router
 
 app = FastAPI(
     title="PeopleSphere AI",
@@ -28,6 +29,7 @@ app.include_router(employees.router)
 app.include_router(departments.router)
 app.include_router(projects.router)
 app.include_router(chat_router)
+app.include_router(langchain_chat_router)
 app.include_router(documents_router)
 
 @app.get("/")

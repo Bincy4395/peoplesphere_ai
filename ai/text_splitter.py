@@ -21,7 +21,7 @@ if __name__ == "__main__":
     content = load_document("documents/uploads/hr_policy.txt")
 
     chunks = split_text(content)
-
+   
     for index, chunk in enumerate(chunks):
 
         print(f"\n--- Chunk {index + 1} ---")

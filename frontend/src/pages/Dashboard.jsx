@@ -3,6 +3,7 @@ import RecentEmployees from "../components/RecentEmployees";
 import ProjectProgress from "../components/ProjectProgress";
 import QuickActions from "../components/QuickActions";
 import ChatbotWidget from "../components/ChatbotWidget";
+import LangChainChatbotWidget from "../components/LangChainChatbotWidget";
 
 function Dashboard() {
   return (
@@ -41,7 +42,9 @@ function Dashboard() {
 
       <QuickActions />
 
-      <ChatbotWidget />
+      {/* <ChatbotWidget /> */}
+
+      <LangChainChatbotWidget />
     </div>
   );
 }
